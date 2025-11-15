@@ -171,8 +171,8 @@
             "name": "shopify",
             "version": "1.0.0",
             "config": {
-                "storeUrl": "storename.myshopify.com",
-                "storefrontAccessToken": ""
+                "storeUrl": "$REPLACE_THIS$",
+                "storefrontAccessToken": "$REPLACE_THIS$"
             }
         }
     ]
