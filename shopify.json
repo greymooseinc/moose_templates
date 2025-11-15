@@ -13,11 +13,141 @@
     "plugins": [
         {
             "name": "products",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "config": {
+                "sections": {
+                    "main": []
+                },
+                "settings": {
+                    "cache": {
+                        "categoriesTTL": 600,
+                        "productsTTL": 300,
+                        "productDetailTTL": 300,
+                        "collectionsTTL": 600,
+                        "tagsTTL": 600,
+                        "brandsTTL": 600
+                    },
+                    "filters": {
+                        "default_product_list": {
+                            "page": 1,
+                            "perPage": 10
+                        }
+                    }
+                }
+            }
         },
         {
             "name": "home",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "config": {
+                "active": true,
+                "sections": {
+                    "main": [
+                        {
+                            "name": "product.categories_section",
+                            "description": "Product categories grid",
+                            "settings": {}
+                        },
+                        {
+                            "name": "banner_section",
+                            "description": "Swipeable promotional banners",
+                            "settings": {
+                                "height": 200,
+                                "autoPlayInterval": 0,
+                                "showIndicators": true
+                            }
+                        },
+                        {
+                            "name": "product.featured_products_section",
+                            "description": "Featured products carousel",
+                            "settings": {}
+                        },
+                        {
+                            "name": "recently_viewed.section",
+                            "description": "Recently viewed products carousel",
+                            "settings": {
+                                "title": "RECENTLY VIEWED",
+                                "maxAge": 72,
+                                "cacheTTL": 24,
+                                "limit": 10,
+                                "showViewAll": true,
+                                "viewAllRoute": "/recently-viewed"
+                            }
+                        },
+                        {
+                            "name": "product.collections_section",
+                            "description": "Product collections",
+                            "settings": {
+                                "title": "CURATED COLLECTIONS",
+                                "titleFontSize": 50,
+                                "titleLetterSpacing": 1.5,
+                                "horizontalPadding": 20,
+                                "titleSpacing": 20,
+                                "cardSpacing": 16,
+                                "cardHeight": 200,
+                                "showGradient": true,
+                                "gradientOpacity": 0.7,
+                                "cardTitleStyle": {
+                                    "fontSize": 18,
+                                    "letterSpacing": 1
+                                },
+                                "cardSubtitleStyle": {
+                                    "fontSize": 13,
+                                    "letterSpacing": 0.3,
+                                    "opacity": 0.9
+                                },
+                                "filters": {
+                                    "page": 1,
+                                    "perPage": 10
+                                },
+                                "emptyMessage": "No collections available",
+                                "errorMessage": "Failed to load collections",
+                                "loadingPadding": 40,
+                                "errorIconSize": 48
+                            }
+                        },
+                        {
+                            "name": "product.new_arrivals_section",
+                            "description": "New arrivals carousel",
+                            "settings": {
+                                "title": "NEW ARRIVALS",
+                                "sectionHeight": 120,
+                                "cardWidth": 100,
+                                "cardSpacing": 12,
+                                "horizontalPadding": 20,
+                                "titleSpacing": 20,
+                                "loadingItemCount": 8,
+                                "showBadge": true,
+                                "badgeText": "NEW",
+                                "productDetailRoute": "/product",
+                                "emptyMessage": "No new arrivals available",
+                                "errorMessage": "Failed to load new arrivals",
+                                "filters": {
+                                    "page": 1,
+                                    "perPage": 2,
+                                    "sortBy": "date",
+                                    "sortOrder": "desc",
+                                    "featured": true
+                                }
+                            }
+                        }
+                    ],
+                    "appBarButtonsLeft": [
+                        {
+                            "name": "search.app_bar_button",
+                            "description": "Search app bar button",
+                            "settings": {}
+                        }
+                    ],
+                    "appBarButtonsRight": [
+                        {
+                            "name": "cart.app_bar_button",
+                            "description": "Cart app bar button",
+                            "settings": {}
+                        }
+                    ]
+                }
+            }
         },
         {
             "name": "banner",
@@ -26,12 +156,26 @@
         {
             "name": "search",
             "version": "1.0.0"
+        },
+        {
+            "name": "cart",
+            "version": "1.0.0"
+        },
+        {
+            "name": "share",
+            "version": "1.0.0"
         }
     ],
     "adapters": [
         {
             "name": "shopify",
-            "version": "1.0.0"
+            "version": "1.0.0",
+            "config": {
+                "shopify": {
+                    "storeUrl": "storename.myshopify.com",
+                    "storefrontAccessToken": ""
+                }
+            }
         }
     ]
 }
