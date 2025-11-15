@@ -1,0 +1,37 @@
+{
+    "id": "shopify_full",
+    "description": "Contins minimal starter project template",
+    "version": "1.0.0",
+    "base": {
+        "repository": "https://github.com/greymooseinc/moose_starter.git",
+        "ref": "main"
+    },
+    "extensions": {
+        "repository": "https://github.com/greymooseinc/moose_extensions.git",
+        "ref": "main"
+    },
+    "plugins": [
+        {
+            "name": "products",
+            "version": "1.0.0"
+        },
+        {
+            "name": "home",
+            "version": "1.0.0"
+        },
+        {
+            "name": "banner",
+            "version": "1.0.0"
+        },
+        {
+            "name": "search",
+            "version": "1.0.0"
+        }
+    ],
+    "adapters": [
+        {
+            "name": "shopify",
+            "version": "1.0.0"
+        }
+    ]
+}
