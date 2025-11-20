@@ -51,6 +51,10 @@
         {
             "name": "banner",
             "version": "1.0.0"
+        },
+        {
+            "name": "core_ui",
+            "version": "1.0.0"
         }
     ],
     "adapters": [
