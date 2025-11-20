@@ -44,6 +44,28 @@
                 "sections": {
                     "main": [
                         {
+                            "name": "banner_section",
+                            "description": "Swipeable promotional banners",
+                            "settings": {
+                            "key": "home_banner",
+                            "height": 300,
+                            "autoPlayInterval": 5,
+                            "showIndicators": true,
+                            "placement": "home",
+                            "locale": "en"
+                            }
+                        },
+                        {
+                            "name": "shorts.gallery",
+                            "active": true,
+                            "description": "Instagram/Facebook Stories-style shorts gallery",
+                            "settings": {
+                            "key": "home_shorts",
+                            "perPage": 10,
+                            "showTitle": true
+                            }
+                        },
+                        {
                             "name": "product.categories_section",
                             "description": "Product categories grid",
                             "settings": {}
@@ -150,7 +172,15 @@
             }
         },
         {
+            "name": "shorts",
+            "version": "1.0.0"
+        },
+        {
             "name": "banner",
+            "version": "1.0.0"
+        },
+        {
+            "name": "core_ui",
             "version": "1.0.0"
         },
         {
