@@ -204,6 +204,14 @@
                 "storeUrl": "$REPLACE_THIS$",
                 "storefrontAccessToken": "$REPLACE_THIS$"
             }
+        },
+        {
+            "name": "demo",
+            "version": "1.0.0",
+            "config": {
+                "bannerApiUrl": "https://greymooseinc.github.io/moose_static/banners_001.json",
+                "shortsApiUrl": "https://greymooseinc.github.io/moose_static/short_001.json"
+            }
         }
     ]
 }
