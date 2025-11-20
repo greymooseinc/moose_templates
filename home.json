@@ -1,0 +1,66 @@
+{
+    "id": "home",
+    "description": "Home banner and short sections test",
+    "version": "1.0.0",
+    "base": {
+        "repository": "https://github.com/greymooseinc/moose_starter.git",
+        "ref": "main"
+    },
+    "extensions": {
+        "repository": "https://github.com/greymooseinc/moose_extensions.git",
+        "ref": "main"
+    },
+    "plugins": [
+        {
+            "name": "home",
+            "version": "1.0.0",
+            "config": {
+                "active": true,
+                "sections": {
+                    "main": [
+                        {
+                            "name": "banner_section",
+                            "description": "Swipeable promotional banners",
+                            "settings": {
+                            "key": "home_banner",
+                            "height": 300,
+                            "autoPlayInterval": 5,
+                            "showIndicators": true,
+                            "placement": "home",
+                            "locale": "en"
+                            }
+                        },
+                        {
+                            "name": "shorts.gallery",
+                            "active": true,
+                            "description": "Instagram/Facebook Stories-style shorts gallery",
+                            "settings": {
+                            "key": "home_shorts",
+                            "perPage": 10,
+                            "showTitle": true
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "shorts",
+            "version": "1.0.0"
+        },
+        {
+            "name": "banner",
+            "version": "1.0.0"
+        }
+    ],
+    "adapters": [
+        {
+            "name": "demo",
+            "version": "1.0.0",
+            "config": {
+                "bannerApiUrl": "https://greymooseinc.github.io/moose_static/banners_001.json",
+                "shortsApiUrl": "https://greymooseinc.github.io/moose_static/short_001.json"
+            }
+        }
+    ]
+}
