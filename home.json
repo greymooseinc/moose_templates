@@ -14,7 +14,7 @@
         {
             "name": "home",
             "version": "1.0.0",
-            "config": {
+            "configurations": {
                 "active": true,
                 "sections": {
                     "main": [
@@ -61,7 +61,7 @@
         {
             "name": "demo",
             "version": "1.0.0",
-            "config": {
+            "configurations": {
                 "bannerApiUrl": "https://greymooseinc.github.io/moose_static/banners_001.json",
                 "shortsApiUrl": "https://greymooseinc.github.io/moose_static/short_001.json"
             }
