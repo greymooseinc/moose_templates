@@ -199,11 +199,7 @@
     "adapters": [
         {
             "name": "shopify",
-            "version": "1.0.0",
-            "configurations": {
-                "storeUrl": "$REPLACE_THIS$",
-                "storefrontAccessToken": "$REPLACE_THIS$"
-            }
+            "version": "1.0.0"
         },
         {
             "name": "demo",
