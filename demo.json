@@ -39,6 +39,48 @@
                             "perPage": 10,
                             "showTitle": true
                             }
+                        },
+                        {
+                            "name": "product.products_section",
+                            "description": "New arrivals carousel",
+                            "settings": {
+                            "title": "NEW ARRIVALS",
+                            "sectionHeight": 120,
+                            "cardWidth": 100,
+                            "cardSpacing": 12,
+                            "horizontalPadding": 20,
+                            "titleSpacing": 20,
+                            "loadingItemCount": 8,
+                            "showBadge": true,
+                            "badgeText": "NEW",
+                            "productDetailRoute": "/product",
+                            "emptyMessage": "No new arrivals available",
+                            "errorMessage": "Failed to load new arrivals",
+                            "filters": {
+                                "page": 1,
+                                "perPage": 2,
+                                "sortBy": "date",
+                                "sortOrder": "desc",
+                                "featured": true
+                            }
+                            }
+                        },
+                        {
+                            "name": "product.products_section",
+                            "description": "Featured products carousel",
+                            "settings": {}
+                        },
+                        {
+                            "name": "recently_viewed.section",
+                            "description": "Recently viewed products carousel",
+                            "settings": {
+                            "title": "RECENTLY VIEWED",
+                            "maxAge": 72,
+                            "cacheTTL": 24,
+                            "limit": 10,
+                            "showViewAll": true,
+                            "viewAllRoute": "/recently-viewed"
+                            }
                         }
                     ],
                     "appBarButtonsLeft": [
