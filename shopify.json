@@ -194,6 +194,29 @@
         {
             "name": "share",
             "version": "1.0.0"
+        },
+        {
+            "name": "auth",
+            "version": "1.0.0"
+        },
+        {
+            "name": "theme_default",
+            "version": "1.0.0"
+        },
+        {
+            "name": "theme_manager",
+            "version": "1.0.0"
+        },
+        {
+            "name": "checkout",
+            "version": "1.0.0",
+            "configurations": {
+                "mode": "web",
+                "webCheckoutUrl": null,
+                "skipAddressCollection": false,
+                "successUrlPattern": "thank_you",
+                "webCheckoutTimeout": 600
+            }
         }
     ],
     "adapters": [
@@ -208,6 +231,10 @@
                 "bannerApiUrl": "https://greymooseinc.github.io/moose_static/banners_001.json",
                 "shortsApiUrl": "https://greymooseinc.github.io/moose_static/short_001.json"
             }
+        },
+        {
+            "name": "google_sign_in",
+            "version": "1.0.0"
         }
     ]
 }
